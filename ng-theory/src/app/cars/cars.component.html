@@ -1,0 +1,13 @@
+<button class="btn btn-primary"  (click)="addCar()">Добавить - машину</button>
+
+<p><b><font [color]="fontcolor"> {{ addCarStatus }} </font></b></p>
+
+<hr>
+<app-car></app-car>
+<app-car></app-car>
+
+<hr>
+<input type="text" class="form-control" (input)="onInputText($event)">
+<p> {{ inputText }}</p>
+
+

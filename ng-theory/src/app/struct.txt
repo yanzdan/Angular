@@ -1,0 +1,11 @@
+/src/index.html - стартовая страница , в нее будут добавлены необходимые скрипты и отдана на клиента
+                  Ключевым элементом является селектор <app-root>
+
+
+/src/app/start.component.ts - маппинг селекторов на темплейты
+/src/app/start.module.ts  - импортирует /src/app/start.component.ts и запускает компонент
+Старт StartModule пинается из main.ts
+
+из /src/app
+ng generate component foobar
+(можно ng g c)

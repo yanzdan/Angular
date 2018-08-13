@@ -19,8 +19,8 @@
       <td>{{ item.action }}</td>
       <td><input type="checkbox" [(ngModel)]="item.done" /></td>
       <td [ngSwitch]="item.done">
-        <span class="SpanIsDone-YES" *ngSwitchCase="true">Готово</span>
-        <span class="SpanIsDone-NO" *ngSwitchDefault>Пока нет</span>
+        <span class="SpanIsDone-TRUE" *ngSwitchCase="true">Готово</span>
+        <span class="SpanIsDone-FALSE" *ngSwitchDefault>Пока нет</span>
       </td>
     </tr>
   </tbody>

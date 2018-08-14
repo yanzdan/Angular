@@ -2,7 +2,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'child-comp',
-  template: `<input [ngModel]="userNameInChild" (ngModelChange)="onNameChange($event)" />`
+  template: `<input [ngModel]="userNameInChild" `
+    + ` (ngModelChange)="onNameChange($event)" `
+    + `/>
+  <p>ChildName= {{userNameInChild}}</p>`
 })
 export class ChildComponent{
 
@@ -12,7 +15,7 @@ export class ChildComponent{
   @Output() userNameInChildChange = new EventEmitter<string>();
   onNameChange(model: string){
 
-    this.userNameInChild = model;
-    this.userNameInChildChange.emit(model);
+   //this.userNameInChild = "<<" + model +">>";
+   this.userNameInChildChange.emit(model.split("").reverse().join(""));
   }
 }

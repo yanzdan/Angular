@@ -13,8 +13,15 @@ import { StartComponent }   from './start.component';
 //import { ChildComponent }   from './2_7.2/child.component';
 //import { AppComponent }   from './2_7.2/app.component';
 
-import { ChildComponent }   from './2_10.1/child.component';
-import { AppComponent }   from './2_10.1/app.component';
+//Привязка к событиям дочернего компонента
+//https://metanit.com/web/angular2/2.10.php
+//import { ChildComponent }   from './2_10.1/child.component';
+//import { AppComponent }   from './2_10.1/app.component';
+
+//Двусторонняя Привязка родительского и дочернего компонентов
+//https://metanit.com/web/angular2/2.10.php
+import { ChildComponent }   from './2_10.2/child.component';
+import { AppComponent }   from './2_10.2/app.component';
 
 
 @NgModule({

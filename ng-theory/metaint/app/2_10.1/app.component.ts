@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h2>Количество кликов: {{clicks}}</h2>
+  template: `    
+  <h1>Example 2.10.1</h1> 
+  <h2>Количество кликов: {{clicks}}</h2>
   <child-comp (onChangeChild)="onChangeParentProc($event)"></child-comp>`
 })
 export class AppComponent {
